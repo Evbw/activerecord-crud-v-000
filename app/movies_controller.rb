@@ -21,8 +21,7 @@ end
 
 def can_be_created_in_a_block(args = {title: "Home Alone"})
   Movie.create do |m|
-    m = args
-    binding.pry
+    m.title = args(:title)
   end
 end
 
