@@ -19,7 +19,7 @@ def can_be_created_with_a_hash_of_attributes
   movie
 end
 
-def can_be_created_in_a_block(args = "Home Alone")
+def can_be_created_in_a_block(args)
   Movie.create do |m|
     m = args
     binding.pry
