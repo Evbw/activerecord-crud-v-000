@@ -20,6 +20,7 @@ end
 def can_be_created_in_a_block(args = "Home Alone")
   Movie.create do |m|
     m = args
+    binding.pry
   end
 end
 
